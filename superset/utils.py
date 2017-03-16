@@ -43,7 +43,7 @@ logging.getLogger('MARKDOWN').setLevel(logging.INFO)
 
 
 EPOCH = datetime(1970, 1, 1)
-DTTM_ALIAS = '__timestamp'
+DTTM_ALIAS = 'a__timestamp'
 
 
 class SupersetException(Exception):
