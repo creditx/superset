@@ -2250,11 +2250,11 @@ class Superset(BaseSupersetView):
             'user': {
                 'username': user.username,
                 'firstName': user.first_name,
-                'lastName': user.last_name,
+                'lastName': user.last_name.decode("utf-8"),
                 'userId': user.id,
                 'isActive': user.is_active(),
                 'createdOn': user.created_on.isoformat(),
-                'email': user.email,
+                'email': user.email.decode("utf-8"),
                 'roles': roles,
                 'permissions': permissions,
             }
