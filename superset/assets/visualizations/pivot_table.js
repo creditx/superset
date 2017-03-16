@@ -22,7 +22,7 @@ module.exports = function (slice, payload) {
       scrollCollapse: true,
       scrollX: true,
     });
-    table.column('-1').order('desc').draw();
+    table.column('1').order('desc').draw();
     fixDataTableBodyHeight(
         container.find('.dataTables_wrapper'), height);
   }
